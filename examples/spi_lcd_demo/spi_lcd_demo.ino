@@ -96,7 +96,7 @@ uint16_t r, g, b, usColor1, usColor2;
     y = random(HEIGHT);
     r1 = random(4, WIDTH/2);
     r2 = random(4, WIDTH/2);
-    spilcdEllipse(&lcd, x, y, r1, r2, usColor,1, DRAW_TO_LCD);
+    spilcdEllipse(&lcd, x, y, r1, r2, 0b1111, usColor, 1, DRAW_TO_LCD);
   }
   delay(4000);
   for (int count=0; count<5000; count++)
